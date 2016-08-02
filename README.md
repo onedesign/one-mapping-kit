@@ -21,7 +21,12 @@ class MockObject: ODCMappableObject {
     var stringWithDefault: String = "default value"
 
     override func mapping(mapper: ODCMapper) throws {
-        //TODO
+        try requiredInt <~ mapper.key("requiredInt")
+        try requiredString <~ mapper.key("requiredString")
+
+        optionalInt <~ mapper.key("optionalInt")
+        optionalString <~ mapper.key("optionalString")
+        stringWithDefault <~ mapper.key("stringWithDefault")
     }
 }
 ```
@@ -37,7 +42,7 @@ class MockObject: ODCMappableObject {
     var requiredInt: Int!
 
     override func mapping(mapper: ODCMapper) throws {
-        //TODO
+        try requiredInt <~ mapper.key("requiredInt")
     }
 }
 
@@ -52,7 +57,7 @@ class MockObject: ODCMappableObject {
     var stringWithDefault: String = "default"
 
     override func mapping(mapper: ODCMapper) throws {
-        //TODO
+        stringWithDefault <~ mapper.key("requiredString")
     }
 }
 
@@ -70,7 +75,7 @@ class MockObject: ODCMappableObject {
     var optionalInt: Int?
 
     override func mapping(mapper: ODCMapper) throws {
-        //TODO
+        optionalInt <~ mapper.key("requiredString")
     }
 }
 ```
