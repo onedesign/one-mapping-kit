@@ -45,6 +45,7 @@ class MockObject: ODCMappableObject {
         try requiredInt <~ mapper.key("requiredInt")
     }
 }
+```
 
 #### Required Variables with an Initial Value
 
