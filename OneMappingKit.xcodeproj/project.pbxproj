@@ -13,6 +13,8 @@
 		D09E17391D511AC200AD4AF1 /* ODCJSONHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E17381D511AC200AD4AF1 /* ODCJSONHelperTests.swift */; };
 		D09E173D1D511B5000AD4AF1 /* ODCMappingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E173C1D511B5000AD4AF1 /* ODCMappingError.swift */; };
 		D09E173F1D511C8E00AD4AF1 /* ODCMappableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E173E1D511C8E00AD4AF1 /* ODCMappableObject.swift */; };
+		D09E17411D511DD200AD4AF1 /* ODCMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E17401D511DD200AD4AF1 /* ODCMapper.swift */; };
+		D09E17431D511DDD00AD4AF1 /* ODCMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E17421D511DDD00AD4AF1 /* ODCMapperTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		D09E17381D511AC200AD4AF1 /* ODCJSONHelperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODCJSONHelperTests.swift; sourceTree = "<group>"; };
 		D09E173C1D511B5000AD4AF1 /* ODCMappingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODCMappingError.swift; sourceTree = "<group>"; };
 		D09E173E1D511C8E00AD4AF1 /* ODCMappableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODCMappableObject.swift; sourceTree = "<group>"; };
+		D09E17401D511DD200AD4AF1 /* ODCMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODCMapper.swift; sourceTree = "<group>"; };
+		D09E17421D511DDD00AD4AF1 /* ODCMapperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODCMapperTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 				D09E17361D511AAB00AD4AF1 /* ODCJSONHelper.swift */,
 				D09E173C1D511B5000AD4AF1 /* ODCMappingError.swift */,
 				D09E173E1D511C8E00AD4AF1 /* ODCMappableObject.swift */,
+				D09E17401D511DD200AD4AF1 /* ODCMapper.swift */,
 				D09E171F1D511A0500AD4AF1 /* OneMappingKit.h */,
 				D09E17211D511A0500AD4AF1 /* Info.plist */,
 			);
@@ -90,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				D09E17381D511AC200AD4AF1 /* ODCJSONHelperTests.swift */,
+				D09E17421D511DDD00AD4AF1 /* ODCMapperTests.swift */,
 				D09E172D1D511A0500AD4AF1 /* Info.plist */,
 			);
 			path = OneMappingKitTests;
@@ -204,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D09E173D1D511B5000AD4AF1 /* ODCMappingError.swift in Sources */,
+				D09E17411D511DD200AD4AF1 /* ODCMapper.swift in Sources */,
 				D09E17371D511AAB00AD4AF1 /* ODCJSONHelper.swift in Sources */,
 				D09E173F1D511C8E00AD4AF1 /* ODCMappableObject.swift in Sources */,
 			);
@@ -214,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D09E17391D511AC200AD4AF1 /* ODCJSONHelperTests.swift in Sources */,
+				D09E17431D511DDD00AD4AF1 /* ODCMapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

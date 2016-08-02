@@ -26,16 +26,21 @@ public class ODCMappableObject: NSObject {
             return nil
         }
     }
+
+    //protocol methods declared in extensions cannot be overridden "yet"
+    public func mapping(mapper: ODCMapper) throws {
+        fatalError("Must override ODCMappableObject:mapping:mapper")
+    }
 }
 
 extension ODCMappableObject {
 
     public func fromJSON(data: NSDictionary) throws {
-        //TODO
+        try ODCMapper(object: self, data: data).fromJSON()
     }
 
     public func serialize() -> NSDictionary {
-        return NSDictionary() //TODO
+        return ODCMapper(object: self, data: NSDictionary()).serialize()
     }
 
 }
